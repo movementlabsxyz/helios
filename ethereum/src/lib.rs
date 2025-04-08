@@ -15,3 +15,6 @@ mod constants;
 
 pub use builder::EthereumClientBuilder;
 pub type EthereumClient<DB> = Client<Ethereum, ConsensusClient<MainnetConsensusSpec, HttpRpc, DB>>;
+
+// Include alloy for reusability.
+pub use alloy;
